@@ -1,0 +1,43 @@
+#name {
+	font-family: Courier;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px 0px 0px 5px;
+}
+
+#clear {
+	float: right;
+    font-size: 12px;
+    margin: 10px 0px 0px 5px;    
+}
+
+#instructions {
+	float: left;
+	font-family: sans-serif;
+	font-size: 13px;
+	margin: 0px 0px 10px 5px;
+}
+
+#colorpicker {
+	float: right;
+	margin-top: 10px;
+}
+
+#colorpicker button{
+	display: inline-block;
+	float: right;
+	border: 0px; 
+	height: 20px; 
+	width: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	clear: both;
+}
+
+td {
+	height: 5px;
+	width: 5px;
+	border: 1px solid gray;
+}

@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var rainbow = ["violet", "blue", "green", "yellow", "orange", "red"];   
-    var $pixel = $("#name span"), firstName = "pixel", char = 0;            //For animating logo                                                  
-    var cellSize = 5,                                                       //For making grid
+    var rainbow = ["black", "brown", "violet", "blue", "green", "yellow", "orange", "red"];
+    var $pixel = $("#name span"), firstName = "pixel", char = 0;            //For animating logo
+    var cellSize = 5,                                                       //For making grid; cellSize in px
         height = Math.floor(($(window).height() - 1)/(cellSize + 1)) - 40,      //Subtract header
         width = Math.floor(($(window).width() - 1)/(cellSize + 1));
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
             $pixel.text(letters).css("color", initialColor);
 
             if (char === firstName.length) {
-                $("td").hover(function() {                                  //Set random initial drawing color                              
+                $("td").hover(function() {                                  //Set random initial drawing color
                     $(this).css("background-color", initialColor);
                 });
                 clearTimeout(timeout);
@@ -50,7 +50,7 @@ $(document).ready(function () {
         var buttons = "";
 
         $.each(rainbow, function(index, color) {
-            buttons += "<button id=\"" + color + "\" style=\"background-color:" + 
+            buttons += "<button id=\"" + color + "\" style=\"background-color:" +
                         color + "\"></button>";
         });
 
@@ -65,7 +65,7 @@ $(document).ready(function () {
         location.reload();
     });
 
-    $("#colorpicker").append(makeColorPicker());                            //Make colorPicker      
+    $("#colorpicker").append(makeColorPicker());                            //Make colorPicker
 
     $("#palette").append(makeGrid(height, width));                          //Make grid
 

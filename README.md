@@ -4,5 +4,6 @@ The Odin Project: Javascript/jQuery
 
 Things to add/update:
 1. "Pause" button
-2. pixel logo hold assigned random color
-3. ...
+2. Pixel logo hold assigned random color
+3. Fix "invisible" white color selection on pixel logo
+4. ...

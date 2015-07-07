@@ -1,3 +1,7 @@
+body {
+  min-width: 500px;
+}
+
 #name {
   margin: 0 0 0 5px;
   font-family: Courier;
@@ -21,9 +25,19 @@ button {
 }
 
 #colorpicker button{
-  display: inline-block;
+  margin-top: 25px;
   height: 20px;
   width: 20px;
+}
+
+#black {
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+  border-right: 15px solid black;
+}
+
+#white {
+  border: 1px dashed pink;
 }
 
 table {
